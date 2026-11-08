@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Happy 21st Birthday! 🎂</title>
+  <meta name="theme-color" content="#8fd3fb">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;700;800&family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <canvas id="confetti" aria-hidden="true"></canvas>
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+
+  <!-- HERO -->
+  <header id="hero" class="section hero">
+    <div class="balloon b1"></div>
+    <div class="balloon b2"></div>
+    <div class="balloon b3"></div>
+    <div class="balloon b4"></div>
+    <div class="balloon b5"></div>
+
+    <div class="hero-card">
+      <p class="eyebrow">9 November 2026</p>
+      <h1>Selamat Ulang Tahun,<br><span id="nameSlot" class="name">Sayang</span>!</h1>
+      <button id="ageBadge" class="age-badge" aria-label="Umur 21 tahun">21</button>
+      <p class="sub" id="heroSub"></p>
+      <a href="#loading" class="btn primary">Tekan Sayangg!</a>
+    </div>
+    <div class="scroll-hint">geserr pliss↓</div>
+  </header>
+
+  <!-- LOADING -->
+  <section id="loading" class="section reveal">
+    <h2>Sedang memuat umur 21 odee nih…</h2>
+    <div class="bar" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0">
+      <div id="barFill" class="bar-fill"></div>
+    </div>
+    <p id="barText" class="bar-text">0%</p>
+    <button id="forceBtn" class="btn primary" hidden>Bantu pencet agii ayyangg 💪</button>
+    <p id="loadDone" class="load-done" hidden></p>
+  </section>
+
+  <!-- CAKE -->
+  <section id="cake" class="section alt reveal">
+    <h2>Yayy!!Tiup lilinnya ayyanggg!!🎂</h2>
+    <p class="muted">Uda bantu doa yah, uda harap sayangg makin cantikk, makin lancar rezekinya, lancar kuliahnya, lancar TA nya, sama uda sampai nikah heheheheh, lebih bisa jaga emosinya ya sayangg, uda tau ode pasti bisaa!!!.<br>Tiup sekarang lilinnya sayangg!!.</p>
+
+    <div class="cake" id="cakeBox">
+      <div class="candles">
+        <button class="candle" aria-label="Lilin 1"><span class="flame"></span><span class="stick"></span></button>
+        <button class="candle" aria-label="Lilin 2"><span class="flame"></span><span class="stick"></span></button>
+        <button class="candle" aria-label="Lilin 3"><span class="flame"></span><span class="stick"></span></button>
+      </div>
+      <div class="tier t-top"></div>
+      <div class="tier t-bottom"></div>
+      <div class="plate"></div>
+    </div>
+
+    <button id="blowBtn" class="btn primary">Tiup! 💨</button>
+    <p id="wishText" class="wish" hidden></p>
+  </section>
+
+  <!-- FACTS -->
+  <section id="facts" class="section reveal">
+    <h2>Nasihat-nasihat dari uda untuk ode 21 tahun ini</h2>
+    <p class="muted">Ketuk kartunya untuk membuka nasihat. Semua nasihat ini 100% benar menurut uda.</p>
+    <div id="factGrid" class="fact-grid"></div>
+  </section>
+
+  <!-- PRANK QUESTION -->
+  <section id="question" class="section alt reveal">
+    <h2 id="questionText">Satu pertanyaan penting…</h2>
+    <div id="arena" class="arena">
+      <button id="yesBtn" class="btn primary yes">Iya dong 💙</button>
+      <button id="noBtn" class="btn no">Tidak</button>
+    </div>
+    <p id="questionReply" class="wish" hidden></p>
+  </section>
+
+  <!-- LETTER -->
+  <section id="letter" class="section reveal">
+    <div class="letter">
+      <h2>Surat kecil buat kamu</h2>
+      <div id="letterBody"></div>
+      <p class="signature" id="signature"></p>
+    </div>
+    <button id="finalBtn" class="btn primary big">Hujan konfeti terakhir 🎉</button>
+  </section>
+
+  <!-- MEMORIES (KENANGAN FOTO) -->
+  <section id="memories" class="section alt reveal">
+    <h2>Kenangan Ode & Uda 📸</h2>
+    <p class="muted">Ketuk fotonya untuk membuka dan melihat kenangan di baliknya.</p>
+    <div id="memoryGrid" class="memory-grid"></div>
+  </section>
+
+  <footer class="footer">
+    <p>Dibuat dengan cinta babeee.</p>
+  </footer>
+
+  <script src="config.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
